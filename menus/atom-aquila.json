@@ -5,6 +5,12 @@
         "label": "Open in aquila modeller",
         "command": "aquila:model"
       }
+    ],
+    ".tree-view .file": [
+      {
+        "label": "Open in aquila modeller",
+        "command": "aquila:model"
+      }
     ]
   },
   "menu": [
