@@ -1,8 +1,8 @@
 {
-  "name": "atom-aquila",
-  "version": "0.0.1",
+  "name": "aquila",
+  "version": "0.0.0",
   "description": "lexema-aquila features for atom",
-  "main": "index.js",
+  "main": "lib/atom-aquila.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/tinkerscript/atom-aquila#readme",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "4.0.0"
   }
 }
