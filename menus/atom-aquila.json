@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Open in aquila modeller",
+        "command": "atom-aquila:model"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Atom Aquila",
+          "submenu": [
+            {
+              "label": "Open in aquila modeller",
+              "command": "atom-aquila:model"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
