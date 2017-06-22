@@ -3,7 +3,7 @@
     "atom-text-editor": [
       {
         "label": "Open in aquila modeller",
-        "command": "atom-aquila:model"
+        "command": "aquila:model"
       }
     ]
   },
@@ -16,7 +16,7 @@
           "submenu": [
             {
               "label": "Open in aquila modeller",
-              "command": "atom-aquila:model"
+              "command": "aquila:model"
             }
           ]
         }
