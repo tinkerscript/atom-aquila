@@ -1,0 +1,18 @@
+{
+  "context-menu": {
+    ".tree-view .file": [{
+      "label": "Edit in aquila",
+      "command": "aquila:edit"
+    }]
+  },
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label": "Atom Aquila",
+      "submenu": [{
+        "label": "Status",
+        "command": "aquila:status"
+      }]
+    }]
+  }]
+}

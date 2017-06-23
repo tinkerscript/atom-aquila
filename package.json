@@ -2,7 +2,7 @@
   "name": "aquila",
   "version": "0.0.0",
   "description": "lexema-aquila features for atom",
-  "main": "lib/atom-aquila.js",
+  "main": "lib/aquila.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
