@@ -111,3 +111,9 @@
     opacity: 0.9; }
     .ps:hover > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y {
       background-color: #999; }
+
+
+.always-visible > .ps__scrollbar-x-rail,
+.always-visible > .ps__scrollbar-y-rail {
+  opacity: 0.6;
+}
