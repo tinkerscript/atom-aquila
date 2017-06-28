@@ -1,15 +1,23 @@
 @import "ui-variables";
+
 //https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 .atom-aquila {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: @text-color;
   background-color: @base-background-color;
   font-family: @font-family;
 }
 
+.atom-aquila-tree {
+  height: 110px;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
 .atom-aquila-tree-item {
   cursor: pointer;
-  line-height: 2em;
+  line-height: 2rem;
 }
 
 .atom-aquila-tree-item_selected{
