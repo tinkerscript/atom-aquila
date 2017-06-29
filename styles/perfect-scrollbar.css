@@ -115,5 +115,7 @@
 
 .always-visible > .ps__scrollbar-x-rail,
 .always-visible > .ps__scrollbar-y-rail {
-  opacity: 0.6;
+  background-color: #eee;
+  opacity: 0.9;
+  width: 11px;
 }
