@@ -8,16 +8,20 @@
   font-family: @font-family;
 }
 
-.atom-aquila-tree, .atom-aquila-scroll {
+.atom-aquila-tree, .atom-aquila-scroll, .atom-aquila-grid {
   height: 100%;
-  width: 50%;
+  width: 47%;
   position: relative;
   overflow: hidden;
   display: inline-block;
 }
 
 .atom-aquila-scroll{
-  width: 25px;
+  width: 3%;
+}
+
+.atom-aquila-grid{
+  width: 50%;
 }
 
 .atom-aquila-tree-item {
@@ -28,4 +32,14 @@
 .atom-aquila-tree-item_selected{
   background-color: @background-color-selected;
   color: @text-color-selected;
+}
+
+.atom-aquila-grid > table {
+  width: 100%;
+}
+
+.atom-aquila-cell{
+  border: 1px solid gray;
+  height: 20px;
+  width: 50%;
 }
