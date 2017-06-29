@@ -112,10 +112,7 @@
     .ps:hover > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y {
       background-color: #999; }
 
-
-.always-visible > .ps__scrollbar-x-rail,
-.always-visible > .ps__scrollbar-y-rail {
-  background-color: #eee;
+.atom-aquila-scroll > .ps__scrollbar-x-rail,
+.atom-aquila-scroll > .ps__scrollbar-y-rail {
   opacity: 0.9;
-  width: 11px;
 }
