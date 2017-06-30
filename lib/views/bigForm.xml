@@ -7,7 +7,7 @@
       id="test2" clicked="clicked"
       visible="false"      />
   </ToolBar>
-  <Layout caption="0">
+  <Layout>
     <Group editorWidth="12">
       <PageableLookup readOnly="true" id="pageable" caption="pageableLookup" editorWidth="2" captionWidth="2"
         rowsCount="5" bind="lookup" topCount="5" dataSource="../../models/helpDesk/user.model.json"
