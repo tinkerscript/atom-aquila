@@ -1,4 +1,4 @@
-<Form writeRoles="super" title="111">
+<Form writeRoles="super" title="11">
   <ToolBar id="toolbar">
     <Tool image="current-theme/images/leftNavBar/save.png" visible="true" caption="Сохранить" id="test" hint="asasdasdasd"/>
     <Tool image="current-theme/images/leftNavBar/save.png" caption="clicked" id="test" clicked="clicked" visible="false"/>
