@@ -116,3 +116,13 @@
 .atom-aquila-scroll > .ps__scrollbar-y-rail {
   opacity: 0.9;
 }
+
+.ps__scrollbar-y {
+  width: 10px !important;
+  background: #bbb !important;
+}
+
+.ps__scrollbar-y:hover {
+  width: 10px !important;
+  background: #bbb !important;
+}
