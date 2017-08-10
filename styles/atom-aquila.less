@@ -1,6 +1,10 @@
 @import "ui-variables";
 
 //https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+atom-aquila {
+  height: 100%;
+}
+
 .atom-aquila {
   font-size: 1.2rem;
   color: @text-color;
@@ -8,16 +12,23 @@
   font-family: @font-family;
 }
 
-.atom-aquila-tree, .atom-aquila-scroll {
+.atom-aquila-tree, .atom-aquila-scroll, .atom-aquila-grid {
   height: 100%;
-  width: 50%;
+  width: 47%;
   position: relative;
   overflow: hidden;
   display: inline-block;
+  top: 0;
 }
 
 .atom-aquila-scroll{
-  width: 25px;
+  width: 3%;
+}
+
+.atom-aquila-grid{
+  width: 48%;
+  overflow:  auto;
+  margin-left: 1%;
 }
 
 .atom-aquila-tree-item {
@@ -25,7 +36,45 @@
   line-height: 2rem;
 }
 
+.atom-aquila-tree-between {
+  height: 5px;
+}
+
+.atom-aquila-tree-between-over {
+  border-top: 1px @text-color dashed;
+}
+
+.atom-aquila-tree-item:hover {
+  background-color: @text-color;
+  color: @base-background-color;
+}
+
 .atom-aquila-tree-item_selected{
   background-color: @background-color-selected;
   color: @text-color-selected;
+}
+
+.atom-aquila-grid > table {
+  width: 100%;
+}
+
+.atom-aquila-cell{
+  border: 1px solid gray;
+  padding: 2px;
+  height: 22px;
+  width: 50%;
+}
+
+.atom-aquila-cell > input {
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.atom-aquila-right-cell {
+  cursor: text;
+}
+
+.atom-aquila-bolder{
+  font-weight: bolder;
 }

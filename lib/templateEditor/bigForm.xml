@@ -1,0 +1,206 @@
+<Form writeRoles="super" title="12">
+  <ToolBar id="toolbar">
+    <Tool image="current-theme/images/leftNavBar/save.png" visible="true" caption="Сохранить" id="test" hint="asasdasdasd"/>
+    <Tool image="current-theme/images/leftNavBar/save.png" caption="clicked" id="test" clicked="clicked" visible="false"/>
+    <Tool/>
+    <Tool/>
+    <TextBox/>
+  </ToolBar>
+  <Layout>
+    <Group editorWidth="12">
+      <PageableLookup readOnly="true" id="pageable" caption="pageableLookup" editorWidth="2" captionWidth="2" rowsCount="5" bind="lookup" topCount="5" dataSource="../../models/helpDesk/user.model.json" valueMember="VCode" displayMember="Name"/>
+      <Lookup id="luprimitive8" readOnly="true" caption="Примитив" bindingMode="primitive" bind="lookup_primitive" rowsCount="5" valueMemberColumnText="код" displayMemberColumnText="имя" valueMember="VCode" displayMember="Name" dataSource="../../models/helpDesk/user.model.json"/>
+      <Group>
+        <Tool/>
+        <InfoTool/>
+        <LinkTool/>
+        <GlyphButton/>
+        <LinkTool/>
+      </Group>
+    </Group>
+    <Group editorWidth="8" caption="grid group" id="Group1">
+      <Grid caption="Grid cpation" editorWidth="8" readOnly="true" height="100px">
+        <ColumnGroup name="gr1" text="top lvl group" align="right">
+          <Column datafield="text" text="text" hint="HitntTest">
+            <Memo visible="true"/>
+          </Column>
+          <Column width="200px" datafield="int" text="number">
+            <NumberInput visible="true"/>
+          </Column>
+          <Column width="200px" datafield="flag" text="bool">
+            <CheckBox/>
+          </Column>
+        </ColumnGroup>
+      </Grid>
+    </Group>
+    <Break/>
+    <Group editorWidth="12" caption="breaktest" id="Group1">
+      <DateTimeInput bind="date" id="DTI1" format="dd MMMM yyyy г. HH:mm:ss" valueChanged="tbValChanged"/>
+      <DateTimeInput bind="dateTime" id="DTI2" format="HH:mm:ss" bindingMode="time" valueChanged="tbValChanged" showCalendar="false" showTimePicker="true"/>
+      <HtmlBox id="hb" html="&lt;html>&#xD;&#xA;        &lt;head>&#xD;&#xA;            &lt;script/>&#xD;&#xA;        &lt;head>&#xD;&#xA;        &lt;body>&#xD;&#xA;        Your HTML's body&#xD;&#xA;        &lt;div id='htmlboxtest'/>&#xD;&#xA;        &lt;/body>&#xD;&#xA;        &lt;/html>&#xD;&#xA;     "/>
+    </Group>
+    <Break/>
+    <Group editorWidth="8" caption="breaktest" id="Group1">
+      <Memo editorWidth="5" id="memo" editMode="popup" caption="memo" captionWidth="0" width="100%" controlRows="3" format="html"/>
+    </Group>
+    <Break/>
+    <Group editorWidth="4" caption="breaktest">
+      <TextBox caption="2" editorWidth="2" captionWidth="1" readOnly="true"/>
+    </Group>
+    <Group editorWidth="12">
+      <Image image="current-theme/images/grid/delete.png" hoverImage="current-theme/images/grid/add.png" id="imm1"/>
+      <CustomImage bind="image" id="cim"/>
+      <FileUpload caption="upload" bind="file" id="file"/>
+      <Group editorWidth="12"/>
+      <GlyphButton image="current-theme/images/controls/date.png" value="sdfsdfsdf" captionWidth="1" caption="insert" id="glbtn" denyRoles="super"/>
+      <GlyphButton image="current-theme/images/controls/date.png" caption="select" id="glbtn2"/>
+      <GlyphButton image="current-theme/images/controls/date.png" caption="delete" id="glbtn3"/>
+    </Group>
+    <Group editorWidth="12">
+      <TextBox caption="2" editorWidth="2" captionWidth="1" id="txtbx2"/>
+      <TextBox caption="Фамилия" editorWidth="2" captionWidth="1"/>
+      <CheckBox caption="новый чекбокс" editorWidth="2" captionWidth="0" id="chkbx"/>
+      <TextBox caption="Отчество" editorWidth="2" captionWidth="1"/>
+    </Group>
+    <Group editorWidth="12">
+      <TextBox caption="Описание" editorWidth="6" captionWidth="2"/>
+    </Group>
+    <Group editorWidth="12">
+      <Button editorWidth="2" captionWidth="2" value="Кнопка"/>
+      <Button editorWidth="2" captionWidth="2" value="Кнопка"/>
+    </Group>
+    <Group editorWidth="8" caption="g2">
+      <Button editorWidth="2" captionWidth="2" value="ehehe"/>
+      <TextBox editorWidth="2" captionWidth="2" value="123 test"/>
+    </Group>
+    <Group editorWidth="12" caption="Widgetest" id="Group1">
+      <Widget width="50%" height="500px" id="w1" form="./binding.js" editorWidth="12" caption="asdasdasdasd" image="current-theme/images/controls/date.png"/>
+    </Group>
+    <Group editorWidth="12">
+      <TextBox visible="true" caption="tbValChanged" editorWidth="2" captionWidth="1" valueChanged="tbValChanged"/>
+      <CheckBox caption="tbValChanged" valueChanged="tbValChanged"/>
+      <Memo caption="tbValChanged" valueChanged="tbValChanged"/>
+      <Break/>
+      <DateTimeInput caption="tbValChanged" valueChanged="tbValChanged"/>
+      <PageableLookup id="pageable545" caption="pageableLookup tbValChanged" editorWidth="2" captionWidth="2" rowsCount="5" topCount="5" dataSource="../../models/helpDesk/user.model.json" valueMember="VCode" displayMember="Name" valueChanged="tbValChanged"/>
+      <Lookup id="luprimitive8545" caption="Примитив tbValChanged" bindingMode="primitive" rowsCount="5" valueMemberColumnText="код" displayMemberColumnText="имя" valueMember="VCode" displayMember="Name" dataSource="../../models/helpDesk/user.model.json" valueChanged="tbValChanged"/>
+      <Break/>
+      <NumberInput caption="tbValChangedNI" symbol="$" symbolPosition="right" min="5" max="15" digits="2" decimalDigits="2" id="NItest" hint="sdfasdfsdfsdf"/>
+    </Group>
+    <Group caption="tabs">
+      <Tabs editorWidth="4">
+        <Tab caption="tab + button" editorWidth="4">
+          <Button/>
+        </Tab>
+      </Tabs>
+    </Group>
+    <Group caption="tabs">
+      <Tabs editorWidth="4">
+        <Tab caption="tab + group + button" editorWidth="4">
+          <Group editorWidth="4">
+            <Button/>
+          </Group>
+        </Tab>
+      </Tabs>
+    </Group>
+    <Group caption="group" editorWidth="12">
+      <Group caption="group in group">
+        <Button/>
+      </Group>
+    </Group>
+    <Group caption="group" editorWidth="12">
+      <Button/>
+    </Group>
+    <Group caption="group" editorWidth="12">
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+    </Group>
+    <Group caption="NestedForm (lookupsform)" editorWidth="12">
+      <NestedForm form="./lookupsform.js" editorWidth="12"/>
+    </Group>
+    <Group caption="group" editorWidth="12">
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+    </Group>
+    <Group caption="group" editorWidth="12">
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+    </Group>
+    <Group caption="group" editorWidth="12">
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+    </Group>
+    <Group caption="group" editorWidth="12">
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+    </Group>
+    <Group caption="group" editorWidth="12">
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+    </Group>
+    <Group caption="group" editorWidth="12">
+      <Group caption="group group" editorWidth="12">
+        <TextBox caption="qeqweqweqweqwewq"/>
+        <TextBox caption="qeqweqweqweqwewq"/>
+        <TextBox caption="qeqweqweqweqwewq"/>
+        <Group caption="group group group" editorWidth="12">
+          <TextBox caption="qeqweqweqweqwewq"/>
+          <TextBox caption="qeqweqweqweqwewq"/>
+          <TextBox caption="qeqweqweqweqwewq"/>
+        </Group>
+        <Group caption="group group group" editorWidth="12">
+          <TextBox caption="qeqweqweqweqwewq"/>
+          <TextBox caption="qeqweqweqweqwewq"/>
+          <TextBox caption="qeqweqweqweqwewq"/>
+        </Group>
+      </Group>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <TextBox caption="qeqweqweqweqwewq"/>
+      <Button editorWidth="2" captionWidth="0" value="Кнопка" id="BTQuery" hint="false"/>
+    </Group>
+    <Break/>
+    <Button value="clickkk" clicked="openPopup" visible="false"/>
+  </Layout>
+  <PopupContainer>
+    <PopupWindow id="popupWindow" width="40%" height="auto">
+      <NestedForm form="./lookupsform.js" editorWidth="12"/>
+    </PopupWindow>
+    <PopupWindow id="popupWindow1" width="40%" height="auto">
+      <NestedForm form="./gridForm.js" editorWidth="12"/>
+    </PopupWindow>
+    <PopupWindow id="popupWindow3" width="40%" height="auto">
+      <NestedForm form="./gridForm.js" editorWidth="12"/>
+    </PopupWindow>
+    <PopupWindow id="popupWindow4" width="40%" height="auto">
+      <NestedForm form="./gridForm.js" editorWidth="12"/>
+    </PopupWindow>
+    <PopupWindow id="popupWindow5" width="40%" height="auto">
+      <NestedForm form="./gridForm.js" editorWidth="12"/>
+    </PopupWindow>
+  </PopupContainer>
+</Form>

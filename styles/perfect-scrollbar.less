@@ -1,4 +1,5 @@
 /* perfect-scrollbar v0.7.1 */
+@import "ui-variables";
 .ps {
   -ms-touch-action: auto;
   touch-action: auto;
@@ -21,7 +22,7 @@
       background-color: #999;
       height: 11px; }
   .ps.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail {
-    background-color: #eee;
+    background-color: transparent;
     opacity: 0.9; }
     .ps.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y {
       background-color: #999;
@@ -93,29 +94,30 @@
       background-color: #999;
       height: 11px; }
   .ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail {
-    background-color: #eee;
-    opacity: 0.9; }
+    background-color: @scrollbar-background-color; }
     .ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y {
-      background-color: #999;
+      background-color:@scrollbar-background-color;
       width: 11px; }
   .ps:hover > .ps__scrollbar-x-rail,
   .ps:hover > .ps__scrollbar-y-rail {
     opacity: 0.6; }
   .ps:hover > .ps__scrollbar-x-rail:hover {
-    background-color: #eee;
-    opacity: 0.9; }
+    background-color: #eee; }
     .ps:hover > .ps__scrollbar-x-rail:hover > .ps__scrollbar-x {
       background-color: #999; }
   .ps:hover > .ps__scrollbar-y-rail:hover {
-    background-color: #eee;
-    opacity: 0.9; }
+    background-color: @scrollbar-background-color; }
     .ps:hover > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y {
       background-color: #999; }
 
 
-.always-visible > .ps__scrollbar-x-rail,
-.always-visible > .ps__scrollbar-y-rail {
-  background-color: #eee;
+/* Overrride */
+.atom-aquila-scroll > .ps__scrollbar-x-rail,
+.atom-aquila-scroll > .ps__scrollbar-y-rail {
   opacity: 0.9;
-  width: 11px;
+}
+
+.ps__scrollbar-y {
+  width: 10px !important;
+  background: @scrollbar-color !important;
 }
