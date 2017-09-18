@@ -2,21 +2,11 @@
   <ToolBar id="">
     <Tool image="current-theme/images/leftNavBar/save.png" visible="true" caption="Сохранить" id="test" hint="asasdasdasd"/>
     <Tool image="current-theme/images/leftNavBar/save.png" caption="clicked" id="test" clicked="clicked" visible="false"/>
-    <Tool/>
-    <Tool/>
-    <TextBox/>
   </ToolBar>
   <Layout>
     <Group editorWidth="12">
       <PageableLookup readOnly="true" id="pageable" caption="pageableLookup" editorWidth="2" captionWidth="2" rowsCount="5" bind="lookup" topCount="5" dataSource="../../models/helpDesk/user.model.json" valueMember="VCode" displayMember="Name"/>
       <Lookup id="luprimitive8" readOnly="true" caption="Примитив" bindingMode="primitive" bind="lookup_primitive" rowsCount="5" valueMemberColumnText="код" displayMemberColumnText="имя" valueMember="VCode" displayMember="Name" dataSource="../../models/helpDesk/user.model.json"/>
-      <Group>
-        <Tool/>
-        <InfoTool/>
-        <LinkTool/>
-        <GlyphButton/>
-        <LinkTool/>
-      </Group>
     </Group>
     <Group editorWidth="8" caption="grid group" id="Group1">
       <Grid caption="Grid cpation" editorWidth="8" readOnly="true" height="100px">
