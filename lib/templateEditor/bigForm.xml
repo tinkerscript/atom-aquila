@@ -4,9 +4,7 @@
     <Tool image="current-theme/images/leftNavBar/save.png" caption="clicked" id="test" clicked="clicked" visible="false"/>
   </ToolBar>
   <Layout>
-    <Tool/>
     <Group editorWidth="12">
-      <Tool/>
       <PageableLookup readOnly="true" id="pageable" caption="pageableLookup" editorWidth="2" captionWidth="2" rowsCount="5" bind="lookup" topCount="5" dataSource="../../models/helpDesk/user.model.json" valueMember="VCode" displayMember="Name"/>
       <Lookup id="luprimitive8" readOnly="true" caption="Примитив" bindingMode="primitive" bind="lookup_primitive" rowsCount="5" valueMemberColumnText="код" displayMemberColumnText="имя" valueMember="VCode" displayMember="Name" dataSource="../../models/helpDesk/user.model.json"/>
     </Group>
