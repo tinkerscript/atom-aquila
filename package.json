@@ -1,6 +1,6 @@
 {
   "name": "aquila",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "manifestVersion": "ecosoft-lexema8@3.13.0",
   "description": "lexema-aquila features for atom",
   "main": "lib/aquila.js",
