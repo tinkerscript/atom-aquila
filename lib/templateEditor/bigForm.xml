@@ -2,6 +2,7 @@
   <ToolBar id="">
     <Tool image="current-theme/images/leftNavBar/save.png" visible="true" caption="Сохранить" id="test" hint="asasdasdasd"/>
     <Tool image="current-theme/images/leftNavBar/save.png" caption="clicked" id="test" clicked="clicked" visible="false"/>
+    <Tool/>
   </ToolBar>
   <Layout>
     <Group editorWidth="12">
