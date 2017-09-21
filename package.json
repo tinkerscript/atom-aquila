@@ -36,11 +36,12 @@
     "eslint": "4.0.0"
   },
   "dependencies": {
-    "atom-utils": "^0.9.2",
-    "element-resize-detector": "^1.1.12",
-    "eol": "^0.9.1",
-    "perfect-scrollbar": "^0.7.1",
-    "signals": "^1.0.0",
-    "xmlbuilder": "^9.0.1"
+    "atom-utils": "0.9.2",
+    "element-resize-detector": "1.1.12",
+    "eol": "0.9.1",
+    "perfect-scrollbar": "0.7.1",
+    "signals": "1.0.0",
+    "xml2js": "0.4.17",
+    "xmlbuilder": "9.0.1"
   }
 }
