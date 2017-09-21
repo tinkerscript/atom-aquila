@@ -1,7 +1,7 @@
 {
   "context-menu": {
     ".tree-view .file .name[data-name$=\\.xml]": [{
-      "label": "Edit in aquila",
+      "label": "Aquila",
       "command": "aquila:edit"
     }]
   },
